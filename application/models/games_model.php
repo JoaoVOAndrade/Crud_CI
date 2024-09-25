@@ -1,6 +1,7 @@
 <?php
 
-class Games_model extends CI_Model {
+class Games_model extends CI_Model 
+{
 
     public function index()
     {
