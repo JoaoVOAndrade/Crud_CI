@@ -11,4 +11,5 @@ Class Users_model extends CI_Model{
     {
         return $this->db->get("tb_users")->result_array();
     }
+
 }

@@ -12,8 +12,9 @@
 				<tr>
 					<th>Id</th>
 					<th>Name</th>
-					<th>email</th>
-					<th>country</th>
+					<th>Email</th>
+					<th>Country</th>
+					<th>Actions</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -23,6 +24,15 @@
                         <td><?= $user['name']?></td>
                         <td><?= $user['email']?></td>
 						<td><?= $user['country']?></td>  
+						<td>
+						<a href="" class='btn-sm btn-warning'>
+								<i class='fas fa-pencil-alt'></i>
+							</a>
+
+							<a href="javascript:goDelete(<?= $user['id'] ?>)" class='btn-sm btn-danger'>
+								<i class='fas fa-trash-alt'></i>
+							</a>
+						</td>
 
                     </tr>
                     

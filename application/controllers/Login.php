@@ -16,6 +16,7 @@ class Login extends CI_Controller {
 		$email = $_POST["email"];
 		$password = md5($_POST["password"]);		
 		$user = $this->login_model->store($email, $password);
+		
 
 		if($user){
 			$this->session->set_userdata("logged_user", $user);

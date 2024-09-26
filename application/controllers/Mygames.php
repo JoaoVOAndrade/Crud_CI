@@ -1,14 +1,14 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Users extends CI_Controller {
+class Mygames extends CI_Controller {
 
 	public function index()
 	{
 		permission();
-		$this->load->model("users_model"); //carregando model
+		$this->load->model("users_model"); 
 		$data["users"] = $this->users_model->show();
-		$data["title"] = "Users"; 
+		$data["title"] = "My Games"; 
 		
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/nav-top', $data);
